@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="css/demo.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/categories.css">
+	<style>
+            #blink {
+                font-size: 20px;
+                font-weight: bold;
+                color: #2d38be;
+                transition: 0.1s;
+            }
+        </style>
 </head>
 <style>
    .slogan{
@@ -49,11 +57,16 @@
       <div class="contact-info">
         <p class="slogan">"DesiVDesi Clothing Dublin"</p>
         <p class="author">Parus Khuwaja</p>
-	<p class="author">Contact: 089 414 6900</p>
-	<p class="author">Visit us at</p>
-	<p class="author">9, The Elms, Citywest Demesne, Dublin 24</p>
 	
-        <p class="author">For Further Queries, drop me an email or Whatsapp </p>
+        <p class="author">For Orders, Queries, and Visit, Whatsapp us at </p>
+	<p class="author" id="blink">Contact: 089 414 6900 </p>
+	<script type="text/javascript">
+            var blink = document.getElementById('blink');
+            setInterval(function() {
+                blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+            }, 500);
+        </script>
+
         <p class="author">parus.sander@gmail.com</p>
           <p class="author"><a href="https://www.linkedin.com/in/dr-parus-khuwaja-9b0b98262/" class="logo-name">On LinkedIn</a></p>
       </div>
